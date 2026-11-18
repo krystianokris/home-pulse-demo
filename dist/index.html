@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Home Pulse — interaktywna demonstracja dashboardu Home Assistant. Wyłącznie przykładowe dane, bez połączenia z urządzeniami.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'">
+  <meta name="color-scheme" content="dark light">
+  <title>Home Pulse · Interactive demo</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <aside id="sidebar" aria-label="Nawigacja"></aside>
+  <div class="shell">
+    <header><a class="brand" href="#home">Home <strong>Pulse</strong><small><i></i> DEMO · <span data-label="sample">dane przykładowe</span></small></a><div class="header-right"><span id="clock"></span><button class="round" id="theme-shortcut" aria-label="Zmień motyw"></button><button id="reset" class="quiet">Reset demo</button></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer id="footer"></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog id="room-editor"></dialog>
+</body>
+</html>
